@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class LoginProgram {
+    public static void main(String[] args) {
+
+        // Predefined username & password
+        String correctUsername = "admin";
+        String correctPassword = "1234";
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Username: ");
+        String username = sc.nextLine();
+
+        System.out.print("Enter Password: ");
+        String password = sc.nextLine();
+
+        // Login validation
+        if (username.equals(correctUsername) && password.equals(correctPassword)) {
+            System.out.println("Login Successful!");
+        } else {
+            System.out.println("Invalid Username or Password!");
+        }
+
+        sc.close();
+    }
+}
